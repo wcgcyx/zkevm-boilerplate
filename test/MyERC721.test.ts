@@ -16,7 +16,9 @@ describe("MyERC721", function () {
       "Imaginary Immutable Iguanas", // name
       "III", // symbol
       "https://example-base-uri.com/", // baseURI
-      "https://example-contract-uri.com/" // contractURI
+      "https://example-contract-uri.com/", // contractURI
+      owner.address,
+      ethers.BigNumber.from("2000")
     );
     await contract.deployed();
 
