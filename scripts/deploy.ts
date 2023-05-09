@@ -21,7 +21,9 @@ async function deploy() {
     "Imaginary Immutable Iguanas", // name
     "III", // symbol
     "https://example-base-uri.com/", // baseURI
-    "https://example-contract-uri.com/" // contractURI
+    "https://example-contract-uri.com/", // contractURI
+    deployer.address, // royalty recipient
+    ethers.BigNumber.from("2000"), // fee numerator
   );
   await contract.deployed();
 
