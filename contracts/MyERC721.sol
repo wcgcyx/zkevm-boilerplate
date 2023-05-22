@@ -33,7 +33,7 @@ contract MyERC721 is ImmutableERC721PermissionedMintable {
 
     ///     =====   State Variables  =====
 
-    /// @dev Mapping from <lender, tokenId> to the state of a lease
+    /// @dev Mapping from tokenId to the state of a lease
     mapping(uint256 => LeaseState) public leaseStates;
 
     /// @dev Array storing all leased Ids
